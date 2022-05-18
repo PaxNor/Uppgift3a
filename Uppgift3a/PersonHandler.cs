@@ -23,7 +23,7 @@ namespace Uppgift3a
             return person;
         }
 
-        public void SetPersonAge(Person person, int age)
+        public void ChangePersonAge(Person person, int age)
         {
             person.Age = age;
         }
@@ -71,6 +71,11 @@ namespace Uppgift3a
         public double GetPersonHeight(Person person)
         {
             return person.Height;
+        }
+
+        public void PrintInfo(Person person)
+        {
+            Console.WriteLine(person);
         }
     }
 }

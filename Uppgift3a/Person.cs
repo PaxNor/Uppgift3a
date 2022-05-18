@@ -67,7 +67,9 @@ namespace Uppgift3a
             LName = lName;
         }
 
-
-
+        public override string ToString()
+        {
+            return $"{fName} {lName}, age: {age}, height: {height}, weight: {weight}";
+        }
     }
 }
