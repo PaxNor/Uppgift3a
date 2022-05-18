@@ -12,5 +12,15 @@ namespace Uppgift3a
         {
             pers.Age = age;
         }
+
+        public Person CreatePerson(uint age, string fName, string lName, double height, double weight)
+        {
+            Person person = new Person(fName, lName);
+            person.Age = age;
+            person.Height = height;
+            person.Weight = weight;
+
+            return person;
+        }
     }
 }

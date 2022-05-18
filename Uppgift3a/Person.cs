@@ -11,8 +11,8 @@ namespace Uppgift3a
         private uint age;
         private string fName;
         private string lName;
-        private uint height;
-        private uint weight;
+        private double height;
+        private double weight;
 
         public uint Age {
             get { return age; }
@@ -48,13 +48,13 @@ namespace Uppgift3a
             }
         }
 
-        public uint Height
+        public double Height
         {
             get { return height; }
             set { height = value; }
         }
 
-        public uint Weight
+        public double Weight
         {
             get { return weight; }
             set { weight = value; }
