@@ -176,7 +176,7 @@ namespace Uppgift3a
     // Bird sub classes
     internal class Pelican : Bird
     {
-        public Pelican(string name, double weight, int age) : base(name, weight, age) { }
+        public Pelican(string name, double weight, int age, int wingSpan) : base(name, weight, age, wingSpan) { }
 
         public override string DoSound()
         {
@@ -186,7 +186,7 @@ namespace Uppgift3a
 
     internal class Flamingo : Bird
     {
-        public Flamingo(string name, double weight, int age) : base(name, weight, age) { }
+        public Flamingo(string name, double weight, int age, int wingSpan) : base(name, weight, age, wingSpan) { }
 
         public override string DoSound()
         {
@@ -196,7 +196,7 @@ namespace Uppgift3a
 
     internal class Swan : Bird
     {
-        public Swan(string name, double weight, int age) : base(name, weight, age) { }
+        public Swan(string name, double weight, int age, int wingSpan) : base(name, weight, age, wingSpan) { }
 
         public override string DoSound()
         {
@@ -207,7 +207,7 @@ namespace Uppgift3a
     // inherits from wolf, implements IPerson
     internal class Wolfman : Wolf, IPerson
     {
-        public Wolfman(string name, double weight, int age) : base(name, weight, age) { }
+        public Wolfman(string name, double weight, int age, string furColor) : base(name, weight, age, furColor) { }
 
         public override string DoSound()
         {
