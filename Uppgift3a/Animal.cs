@@ -42,16 +42,22 @@ namespace Uppgift3a
     // Animal sub classes
     internal class Horse : Animal
     {
+        private const string sound = "Neigh";
         public Horse(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()
         {
-            return "Neigh";
+            return sound;
         }
 
         public string EatHay()
         {
             return "Eating";
+        }
+
+        public override string Stats()
+        {
+            return $"{Name}, {Weight}, {Age}, {sound}";
         }
     }
 
@@ -59,6 +65,7 @@ namespace Uppgift3a
     {
         private enum Posture { Sitting, Standing }
 
+        private const string sound = "Woof";
         private Posture posture;
         public Dog(string name, double weight, int age) : base(name, weight, age) 
         {
@@ -67,7 +74,7 @@ namespace Uppgift3a
 
         public override string DoSound()
         {
-            return "Woof";
+            return sound;
         }
 
         public void Sit()
@@ -79,50 +86,78 @@ namespace Uppgift3a
         {
             posture = Posture.Standing;
         }
+
+        public override string Stats()
+        {
+            return $"{Name}, {Weight}, {Age}, {sound}, {posture.ToString()}";
+        }
     }
 
     internal class Hedgehog : Animal
     {
+        private const string sound = "Hedgehog sound";
         public int SpikeNumber { set; get; }
         public Hedgehog(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()
         {
-            return "Hedgehog sound";
+            return sound;
         }
 
+        public override string Stats()
+        {
+            return $"{Name}, {Weight}, {Age}, {sound}, {SpikeNumber}";
+        }
     }
 
     internal class Worm : Animal
     {
+        private const string sound = "Worm sound";
         public int Length { set; get; }
         public Worm(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()
         {
-            return "Worm sound";
+            return sound;
+        }
+
+        public override string Stats()
+        {
+            return $"{Name}, {Weight}, {Age}, {sound}, {Length}";
         }
     }
 
     internal class Bird : Animal
     {
+        private const string sound = "Squeek";
         public int WingSpan { set; get; }
         public Bird(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()
         {
-            return "Squeek";
+            return sound;
+        }
+
+        public override string Stats()
+        {
+            return $"{Name}, {Weight}, {Age}, {sound}, {WingSpan}";
         }
     }
 
     internal class Wolf : Animal
     {
+        private const string sound = "Houl";
         public string FurColor { set; get; }
         public Wolf(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()
         {
-            return "Houl";
+            return sound;
+        }
+
+        public override string Stats()
+        {
+            return $"{Name}, {Weight}, {Age}, {sound}, {FurColor}";
         }
     }
 
