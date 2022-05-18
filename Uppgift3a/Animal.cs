@@ -4,6 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Uppgift 3.3
+ * 
+ *  Fråga 13: Man bör lägga ett nytt fågelattribut i Bird. Då ärver alla subklasser det attributet.
+ *  Fråga 14: Då skulle man lägga det i den abstrakta bas klassen Animal för att ge alla subklasser det attributet.
+ *  
+ */
+
+
 namespace Uppgift3a
 {
     // IPerson interface
@@ -27,6 +36,7 @@ namespace Uppgift3a
         }
 
         public abstract string DoSound();
+        public abstract string Stats();
     }
 
     // Animal sub classes
@@ -45,14 +55,10 @@ namespace Uppgift3a
         }
     }
 
-    internal enum Posture
-    {
-        Sitting,
-        Standing
-    }
-
     internal class Dog : Animal
     {
+        private enum Posture { Sitting, Standing }
+
         private Posture posture;
         public Dog(string name, double weight, int age) : base(name, weight, age) 
         {
