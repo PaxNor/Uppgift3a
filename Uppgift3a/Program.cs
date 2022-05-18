@@ -2,6 +2,7 @@
 using Uppgift3a;
 
 // 3.1
+Console.WriteLine("\n -- 3.1 --\n");
 
 
 //try
@@ -49,6 +50,7 @@ catch (ArgumentException argEx)
 }
 
 // 3.2
+Console.WriteLine("\n -- 3.2 --\n");
 
 List<UserError> errors = new List<UserError>() {
     new NumericInputError(),
@@ -64,3 +66,18 @@ foreach(UserError error in errors)
     Console.WriteLine(error.UEMessage());
 }
 
+Console.WriteLine();
+
+errors = new List<UserError>() {
+    new NumericRangeError(),
+    new FloatingPointError(),
+    new NegativeNumberError(),
+    new NumericRangeError(),
+    new FloatingPointError(),
+    new NegativeNumberError()
+};
+
+foreach (UserError error in errors)
+{
+    Console.WriteLine(error.UEMessage());
+}

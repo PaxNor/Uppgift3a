@@ -30,4 +30,30 @@ namespace Uppgift3a
             return "You tried to use a text input in a numeric only field. This fired an error!";
         }
     }
+
+    // more sub classes
+    internal class NumericRangeError : UserError
+    {
+        public override string UEMessage()
+        {
+            return "Your input exceeded the allowed range. This fired an error!";
+        }
+    }
+
+    internal class FloatingPointError : UserError
+    {
+        public override string UEMessage()
+        {
+            return "You tried to enter a floating point number in an integer only input field. This fired an error!";
+        }
+    }
+
+    internal class NegativeNumberError : UserError
+    {
+        public override string UEMessage()
+        {
+            return "You tried to enter a negative number in a positive number only input field. This fired an error!";
+        }
+    }
+
 }
