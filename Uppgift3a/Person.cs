@@ -14,22 +14,38 @@ namespace Uppgift3a
         private uint height;
         private uint weight;
 
-        public uint Age
-        {
+        public uint Age {
             get { return age; }
-            set { age = value; }
+            set {
+                if(value < 0) {
+                    throw new ArgumentException("Age must be greater than 0");
+                }
+                age = value;
+            }
         }
 
         public string FName
         {
             get { return fName; }
-            set { fName = value; }
+            set { 
+                if(value.Length < 2 || value.Length > 10)
+                {
+                    throw new ArgumentException("First name must be between 2 - 10 characters long.");
+                }
+                fName = value;
+            }
         }
 
         public string LName
         {
             get { return lName; }
-            set { lName = value; }
+            set { 
+                if(value.Length < 3 || value.Length > 15)
+                {
+                    throw new ArgumentException("Last name must be between 3 - 15 characters long.");
+                }
+                lName = value;
+            }
         }
 
         public uint Height
@@ -44,6 +60,12 @@ namespace Uppgift3a
             set { weight = value; }
         }
 
+        public Person(string fName, string lName)
+        {
+            // setting value with properties which includes a range check!
+            FName = fName;
+            LName = lName;
+        }
 
 
 
