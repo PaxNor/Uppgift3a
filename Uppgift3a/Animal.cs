@@ -10,6 +10,13 @@ using System.Threading.Tasks;
  *  Fråga 13: Man bör lägga ett nytt fågelattribut i Bird. Då ärver alla subklasser det attributet.
  *  Fråga 14: Då skulle man lägga det i den abstrakta bas klassen Animal för att ge alla subklasser det attributet.
  *  
+ * Uppgift 3.4
+ * 
+ *  Fråga 9:
+ *  Fråga 10:
+ *  Fråga 13:
+ *  Fråga 17:
+ *  
  */
 
 
