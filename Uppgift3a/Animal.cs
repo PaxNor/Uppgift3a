@@ -97,7 +97,10 @@ namespace Uppgift3a
     {
         private const string sound = "Hedgehog sound";
         public int SpikeNumber { set; get; }
-        public Hedgehog(string name, double weight, int age) : base(name, weight, age) { }
+        public Hedgehog(string name, double weight, int age, int spikeNumber) : base(name, weight, age) 
+        { 
+            SpikeNumber = spikeNumber;
+        }
 
         public override string DoSound()
         {
@@ -114,7 +117,10 @@ namespace Uppgift3a
     {
         private const string sound = "Worm sound";
         public int Length { set; get; }
-        public Worm(string name, double weight, int age) : base(name, weight, age) { }
+        public Worm(string name, double weight, int age, int length) : base(name, weight, age) 
+        {
+            Length = length;
+        }
 
         public override string DoSound()
         {
@@ -131,7 +137,10 @@ namespace Uppgift3a
     {
         private const string sound = "Squeek";
         public int WingSpan { set; get; }
-        public Bird(string name, double weight, int age) : base(name, weight, age) { }
+        public Bird(string name, double weight, int age, int wingSpan) : base(name, weight, age) 
+        {
+            WingSpan = wingSpan;
+        }
 
         public override string DoSound()
         {
@@ -148,7 +157,10 @@ namespace Uppgift3a
     {
         private const string sound = "Houl";
         public string FurColor { set; get; }
-        public Wolf(string name, double weight, int age) : base(name, weight, age) { }
+        public Wolf(string name, double weight, int age, string furColor) : base(name, weight, age) 
+        {
+            FurColor = furColor;
+        }
 
         public override string DoSound()
         {
