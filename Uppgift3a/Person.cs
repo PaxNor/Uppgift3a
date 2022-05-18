@@ -8,13 +8,13 @@ namespace Uppgift3a
 {
     internal class Person
     {
-        private uint age;
+        private int age;
         private string fName;
         private string lName;
         private double height;
         private double weight;
 
-        public uint Age {
+        public int Age {
             get { return age; }
             set {
                 if(value < 0) {

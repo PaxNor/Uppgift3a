@@ -8,12 +8,12 @@ namespace Uppgift3a
 {
     internal class PersonHandler
     {
-        public void SetAge(Person pers, uint age)
+        public void SetAge(Person pers, int age)
         {
             pers.Age = age;
         }
 
-        public Person CreatePerson(uint age, string fName, string lName, double height, double weight)
+        public Person CreatePerson(int age, string fName, string lName, double height, double weight)
         {
             Person person = new Person(fName, lName);
             person.Age = age;
@@ -23,12 +23,12 @@ namespace Uppgift3a
             return person;
         }
 
-        public void SetPersonAge(Person person, uint age)
+        public void SetPersonAge(Person person, int age)
         {
             person.Age = age;
         }
 
-        public uint GetPersonAge(Person person)
+        public int GetPersonAge(Person person)
         {
             return person.Age;
         }
