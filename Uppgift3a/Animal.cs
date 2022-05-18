@@ -12,10 +12,10 @@ using System.Threading.Tasks;
  *  
  * Uppgift 3.4
  * 
- *  Fråga 9:
- *  Fråga 10:
- *  Fråga 13:
- *  Fråga 17:
+ *  Fråga 9: En häst är inte en subklass till hund.
+ *  Fråga 10: Animal
+ *  Fråga 13: Rätt metod anropas p.g.a polymorfism, varje objekt i listan ärver från Animal och överlagrar Stats() metoden.
+ *  Fråga 17: Det fungerar om man först kontrolerar att djuret är en hund och sedan castar Animal objektet till Dog.
  *  
  */
 
@@ -97,6 +97,11 @@ namespace Uppgift3a
         public override string Stats()
         {
             return $"{Name}, {Weight}, {Age}, {sound}, {posture.ToString()}";
+        }
+
+        public string GetPosture()
+        {
+            return posture.ToString();
         }
     }
 
