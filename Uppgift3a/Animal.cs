@@ -38,20 +38,46 @@ namespace Uppgift3a
         {
             return "Neigh";
         }
+
+        public string EatHay()
+        {
+            return "Eating";
+        }
+    }
+
+    internal enum Posture
+    {
+        Sitting,
+        Standing
     }
 
     internal class Dog : Animal
     {
-        public Dog(string name, double weight, int age) : base(name, weight, age) { }
+        private Posture posture;
+        public Dog(string name, double weight, int age) : base(name, weight, age) 
+        {
+            posture = Posture.Sitting;
+        }
 
         public override string DoSound()
         {
             return "Woof";
         }
+
+        public void Sit()
+        {
+            posture = Posture.Sitting;
+        }
+
+        public void Stand()
+        {
+            posture = Posture.Standing;
+        }
     }
 
     internal class Hedgehog : Animal
     {
+        public int SpikeNumber { set; get; }
         public Hedgehog(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()
@@ -63,6 +89,7 @@ namespace Uppgift3a
 
     internal class Worm : Animal
     {
+        public int Length { set; get; }
         public Worm(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()
@@ -73,6 +100,7 @@ namespace Uppgift3a
 
     internal class Bird : Animal
     {
+        public int WingSpan { set; get; }
         public Bird(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()
@@ -83,6 +111,7 @@ namespace Uppgift3a
 
     internal class Wolf : Animal
     {
+        public string FurColor { set; get; }
         public Wolf(string name, double weight, int age) : base(name, weight, age) { }
 
         public override string DoSound()

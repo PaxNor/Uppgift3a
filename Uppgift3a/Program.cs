@@ -23,6 +23,7 @@ try
     //Person p4 = ph.CreatePerson(39, "U", "Vikström", 190, 90);
     //Person p4 = ph.CreatePerson(39, "Ulf", "Vi", 190, 90);
 
+    // testing setters
     ph.PrintInfo(p1);
     ph.ChangePersonFirstName(p1, "Annika");
     ph.ChangePersonLastName(p1, "Larsson");
@@ -31,6 +32,7 @@ try
     ph.ChangePersonHeight(p1, 176);
     ph.PrintInfo(p1);
 
+    // testing getters
     String info = ph.GetPersonFirstName(p2);
     info = info + " " + ph.GetPersonLastName(p2);
     info = info + " " + ph.GetPersonAge(p2);
