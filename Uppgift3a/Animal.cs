@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Uppgift3a
 {
+    // Abstract base class 
     internal abstract class Animal
     {
         public string Name { get; set; }
@@ -22,6 +23,7 @@ namespace Uppgift3a
         public abstract string DoSound();
     }
 
+    // Animal sub classes
     internal class Horse : Animal
     {
         public Horse(string name, double weight, int age) : base(name, weight, age) { }
@@ -82,4 +84,36 @@ namespace Uppgift3a
             return "Houl";
         }
     }
+
+    // Bird sub classes
+    internal class Pelican : Bird
+    {
+        public Pelican(string name, double weight, int age) : base(name, weight, age) { }
+
+        public override string DoSound()
+        {
+            return "Pelican sound";
+        }
+    }
+
+    internal class Flamingo : Bird
+    {
+        public Flamingo(string name, double weight, int age) : base(name, weight, age) { }
+
+        public override string DoSound()
+        {
+            return "Flamingo sound";
+        }
+    }
+
+    internal class Swan : Bird
+    {
+        public Swan(string name, double weight, int age) : base(name, weight, age) { }
+
+        public override string DoSound()
+        {
+            return "Swan sound";
+        }
+    }
+
 }
