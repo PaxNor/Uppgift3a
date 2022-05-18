@@ -5,14 +5,15 @@ using Uppgift3a;
 Console.WriteLine("\n -- 3.1 --\n");
 
 
-//try
-//{
-//    Person person = new Person("A", "Bertilsson");
-//}
-//catch (ArgumentException argEx)
-//{
-//    Console.WriteLine(argEx.Message);
-//}
+try
+{
+    Person person = new Person("A", "Bertilsson");
+}
+catch (ArgumentException argEx)
+{
+    Console.WriteLine(argEx.Message);
+}
+
 
 PersonHandler ph = new PersonHandler();
 
@@ -24,8 +25,8 @@ try
 
     // Exception faults
     //Person p4 = ph.CreatePerson(-1, "Ulf", "Vikström", 190, 90);
-    //Person p4 = ph.CreatePerson(39, "U", "Vikström", 190, 90);
-    //Person p4 = ph.CreatePerson(39, "Ulf", "Vi", 190, 90);
+    //Person p5 = ph.CreatePerson(39, "U", "Vikström", 190, 90);
+    //Person p6 = ph.CreatePerson(39, "Ulf", "Vi", 190, 90);
 
     // testing setters
     ph.PrintInfo(p1);
