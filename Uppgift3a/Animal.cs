@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Uppgift3a
 {
+    // IPerson interface
+    internal interface IPerson
+    {
+        public string Talk();
+    }
+
     // Abstract base class 
     internal abstract class Animal
     {
