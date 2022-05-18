@@ -122,4 +122,19 @@ namespace Uppgift3a
         }
     }
 
+    // inherits from wolf, implements IPerson
+    internal class Wolfman : Wolf, IPerson
+    {
+        public Wolfman(string name, double weight, int age) : base(name, weight, age) { }
+
+        public override string DoSound()
+        {
+            return "Houl";
+        }
+
+        public string Talk()
+        {
+            return "I'm a wolfman";
+        }
+    }
 }
