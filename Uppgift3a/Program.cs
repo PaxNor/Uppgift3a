@@ -49,6 +49,7 @@ catch (ArgumentException argEx)
     Console.WriteLine(argEx.Message);
 }
 
+
 // 3.2
 Console.WriteLine("\n -- 3.2 --\n");
 
@@ -81,3 +82,28 @@ foreach (UserError error in errors)
 {
     Console.WriteLine(error.UEMessage());
 }
+
+
+// 3.4
+Console.WriteLine("\n -- 3.4 --\n");
+
+List<Animal> animals = new List<Animal>() {
+    new Horse("Brunte", 850, 14),
+    new Dog("Fido", 8, 3),
+    new Hedgehog("Sonic", 0.6, 2, 1587),
+    new Worm("Hose", 0.09, 1, 13),
+    new Bird("Polly", 1, 7, 40),
+    new Wolf("-", 18, 9, "Grey"),
+    new Pelican("-", 8, 13, 1500),
+    new Wolfman("Woverine", 90, 39, "Black")
+};
+
+foreach (Animal animal in animals)
+{
+    Console.WriteLine(animal.DoSound());
+    if(animal is IPerson)
+    {
+        Console.WriteLine( ((IPerson)animal).Talk() );
+    }
+}
+
