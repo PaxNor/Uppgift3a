@@ -47,3 +47,20 @@ catch (ArgumentException argEx)
 {
     Console.WriteLine(argEx.Message);
 }
+
+// 3.2
+
+List<UserError> errors = new List<UserError>() {
+    new NumericInputError(),
+    new TextInputError(),
+    new NumericInputError(),
+    new TextInputError(),
+    new TextInputError(),
+    new NumericInputError()
+};
+
+foreach(UserError error in errors)
+{
+    Console.WriteLine(error.UEMessage());
+}
+

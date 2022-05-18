@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// 3.2
+
+
 namespace Uppgift3a
 {
     internal abstract class UserError
