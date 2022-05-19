@@ -31,7 +31,7 @@ namespace Uppgift3a
         }
     }
 
-    // more sub classes
+    // my sub classes
     internal class NumericRangeError : UserError
     {
         public override string UEMessage()
