@@ -95,9 +95,9 @@ List<Animal> animals = new List<Animal>() {
     new Worm("Hose", 0.09, 1, 13),
     new Bird("Polly", 1, 7, 40),
     new Dog("Frasse", 10, 8),
-    new Wolf("-", 18, 9, "Grey"),
+    new Wolf("Zeke", 18, 9, "Grey"),
     new Dog("Smulan", 8, 3),
-    new Pelican("-", 8, 13, 1500),
+    new Pelican("Bo", 8, 13, 1500),
     new Wolfman("Woverine", 90, 39, "Black")
 };
 
