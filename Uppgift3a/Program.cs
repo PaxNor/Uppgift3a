@@ -131,7 +131,7 @@ foreach(Animal animal in animals)
 {
     if(animal is Dog)
     {
-        Console.WriteLine( ((Dog)animal).Stats() );
+        Console.WriteLine( animal.Stats() );
     }
 }
 
