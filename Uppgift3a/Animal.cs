@@ -43,7 +43,10 @@ namespace Uppgift3a
         }
 
         public abstract string DoSound();
-        public abstract string Stats();
+        public virtual string Stats() {
+            return $"{Name}, {Weight}, {Age}";
+        }
+
     }
 
     // Animal sub classes
