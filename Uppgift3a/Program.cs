@@ -111,10 +111,10 @@ foreach (Animal animal in animals)
 }
 
 // Dog list
-List<Animal> dog = new List<Animal>() {
+List<Dog> dog = new List<Dog>() {
     new Dog("Fido", 3, 2),
     new Dog("Frasse", 10, 8),
-    new Dog("Smulan", 8, 3)
+    new Dog("Smulan", 8, 3),
     // can not add horse, it's not a type of dog
 };
 
