@@ -67,7 +67,7 @@ namespace Uppgift3a
 
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {sound}";
+            return base.Stats() + $" {sound}";
         }
     }
 
@@ -99,7 +99,7 @@ namespace Uppgift3a
 
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {sound}, {posture.ToString()}";
+            return base.Stats() + $" {sound}, {posture.ToString()}";
         }
 
         public string GetPosture()
@@ -124,7 +124,7 @@ namespace Uppgift3a
 
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {sound}, {SpikeNumber}";
+            return base.Stats() + $" {sound}, {SpikeNumber}";
         }
     }
 
@@ -144,7 +144,7 @@ namespace Uppgift3a
 
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {sound}, {Length}";
+            return base.Stats() + $" {sound}, {Length}";
         }
     }
 
@@ -164,7 +164,7 @@ namespace Uppgift3a
 
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {sound}, {WingSpan}";
+            return base.Stats() + $" {sound} {WingSpan}";
         }
     }
 
@@ -184,7 +184,7 @@ namespace Uppgift3a
 
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {sound}, {FurColor}";
+            return base.Stats() + $" {sound}, {FurColor}";
         }
     }
 
